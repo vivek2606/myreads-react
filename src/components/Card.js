@@ -62,3 +62,6 @@ const CardComponent = ({ image, titleText, defaultValue, onChange, authorNames }
 }
 
 export { Card, CardImage, CardTitle, CardAuthors, CardSelector, CardComponent };
+
+
+

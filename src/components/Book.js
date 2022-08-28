@@ -1,4 +1,5 @@
 import { CardComponent } from './Card'
+import PropTypes from 'prop-types'
 
 const Book = ({ book, bookShelfUpdate }) => {
     // const shelves = [
@@ -51,3 +52,8 @@ const Book = ({ book, bookShelfUpdate }) => {
     )
 }
 export default Book;
+
+Book.propTypes = {
+    book: PropTypes.object.isRequired,
+    bookShelfUpdate: PropTypes.func.isRequired
+}
