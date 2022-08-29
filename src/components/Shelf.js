@@ -9,7 +9,7 @@ const Shelf = ({ books, title, bookShelfUpdate }) => {
                 <ol className="flex flex-wrap md:justify-start justify-center">
                     {books.map(item => (
                         <li key={item.id} className="basis-1/2">
-                            <Book key={item.id} book={item} bookShelfUpdate={bookShelfUpdate} />
+                            <Book book={item} bookShelfUpdate={bookShelfUpdate} />
                         </li>
                     ))}
                 </ol>
